@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 package vista;
-import datos.Requerimiento4DAO;
+import dominio.Requerimiento4DAO;
 import datos.Conexion;
-import dominio.Requerimiento4;
+import datos.Requerimiento4;
+
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import java.io.File;
@@ -17,7 +18,6 @@ import javax.swing.ButtonGroup;
  * @author SIPAQUE.RITA
  */
 public class Proceso4 extends javax.swing.JInternalFrame {
-
     /**
      * Creates new form Proceso4
      */
@@ -500,7 +500,7 @@ public class Proceso4 extends javax.swing.JInternalFrame {
         
         
         
-        
+        llenadoDeTablas();
 
     }//GEN-LAST:event_jBottonActionPerformed
 
