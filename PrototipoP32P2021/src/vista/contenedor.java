@@ -10,9 +10,7 @@ package vista;
  * @author PERSONAL
  */
 public class contenedor extends javax.swing.JFrame {
-     private mantenimiento1 mantenimiento1 ;
-      private mantenimiento2 mantenimiento2 ;
-       private Trasacional Trasacional ;
+    
 
     /**
      * Creates new form contenedor
@@ -154,9 +152,7 @@ public class contenedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-    mantenimiento1= new mantenimiento1();
-        mantenimiento1.setVisible(true);
-          jDesktopPane1.add(mantenimiento1);
+   
 
 
 
@@ -165,17 +161,11 @@ public class contenedor extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
 
-  mantenimiento2= new mantenimiento2();
-        mantenimiento2.setVisible(true);
-          jDesktopPane1.add(mantenimiento2);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
 
-Trasacional= new Trasacional();
-        Trasacional.setVisible(true);
-          jDesktopPane1.add(Trasacional);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem8ActionPerformed
@@ -205,6 +195,7 @@ Trasacional= new Trasacional();
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(contenedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
