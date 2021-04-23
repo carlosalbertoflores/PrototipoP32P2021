@@ -116,6 +116,10 @@ public class Requerimiento4 {
         return "Requerimiento4{" + "ID=" + ID + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", DPI=" + DPI + ", Tipo=" + Tipo + ", Genero=" + Genero + ", FechaAlquiler=" + FechaAlquiler + ", FechaCaducidad=" + FechaCaducidad + ", FechaTarde=" + FechaTarde + ", ImporteCargo=" + ImporteCargo + ", total=" + total + '}';
     }
 
+    public Requerimiento4 query(Requerimiento4 proveedorAConsultar) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 
 
 
