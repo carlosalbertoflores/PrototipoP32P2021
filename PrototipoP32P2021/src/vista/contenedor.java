@@ -10,6 +10,7 @@ package vista;
  * @author PERSONAL
  */
 public class contenedor extends javax.swing.JFrame {
+    private Proceso4  Proceso4;
     
 
     /**
@@ -93,7 +94,7 @@ public class contenedor extends javax.swing.JFrame {
         jMenu4.setText("Procesos");
         jMenu4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
 
-        jMenuItem8.setText("jMenuItem8");
+        jMenuItem8.setText("Proceso 4");
         jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem8ActionPerformed(evt);
@@ -165,7 +166,9 @@ public class contenedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
-
+  Proceso4 Proceso4 = new  Proceso4();
+        Proceso4.setVisible(true);     
+            jDesktopPane1.add(Proceso4);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem8ActionPerformed
