@@ -5,6 +5,9 @@
  */
 package vista;
 
+import java.io.File;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author PERSONAL
@@ -147,7 +150,19 @@ public class contenedor extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-       
+      try {
+            if ((new File("src\\main\\java\\vita\\menu.chm")).exists()) {
+                Process p = Runtime
+                .getRuntime()
+                .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\vista\\menu.chm");
+                p.waitFor();
+            } else {
+                JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");
+            }
+            //System.out.println("Correcto");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }       
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem7ActionPerformed
