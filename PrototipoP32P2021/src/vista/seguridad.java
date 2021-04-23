@@ -1,24 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package vista;
 
+import javax.swing.JOptionPane;
 
 /**
  *
+ * @author PERSONAL
  */
-public class MDI_Sistema extends javax.swing.JFrame {
-
- 
+public class seguridad extends javax.swing.JFrame {
+private mantenimiento1 mantenimiento1;
     /**
-     * Creates new form MDI_Seguridad
-     *
-     * @throws java.net.UnknownHostException
+     * Creates new form seguridad
      */
-
-
-    /*------------------------------------------*/
-    public MDI_Sistema() {
+    public seguridad() {
         initComponents();
-
-       
     }
 
     /**
@@ -30,7 +29,7 @@ public class MDI_Sistema extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        JDesktopPane_Escritorio = new javax.swing.JDesktopPane()
+        jDesktopPane1 = new javax.swing.JDesktopPane()
         ;
         jMenuBar1 = new javax.swing.JMenuBar();
         JMenu_Archivo = new javax.swing.JMenu();
@@ -50,20 +49,18 @@ public class MDI_Sistema extends javax.swing.JFrame {
         JMenuItemCambioC = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema Hotelero");
-        setResizable(false);
 
-        JDesktopPane_Escritorio.setBackground(new java.awt.Color(0, 102, 153));
+        jDesktopPane1.setBackground(new java.awt.Color(51, 131, 228));
 
-        javax.swing.GroupLayout JDesktopPane_EscritorioLayout = new javax.swing.GroupLayout(JDesktopPane_Escritorio);
-        JDesktopPane_Escritorio.setLayout(JDesktopPane_EscritorioLayout);
-        JDesktopPane_EscritorioLayout.setHorizontalGroup(
-            JDesktopPane_EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1350, Short.MAX_VALUE)
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
-        JDesktopPane_EscritorioLayout.setVerticalGroup(
-            JDesktopPane_EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 726, Short.MAX_VALUE)
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 279, Short.MAX_VALUE)
         );
 
         JMenu_Archivo.setText("Archivo");
@@ -191,85 +188,110 @@ public class MDI_Sistema extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(JDesktopPane_Escritorio)
+            .addComponent(jDesktopPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(JDesktopPane_Escritorio, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jDesktopPane1)
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
 
     private void JMenuItem_CerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_CerrarSesionActionPerformed
         /*===== OPERACIÓN CERRAR SESIÓN ====
-          Variable entera respuesta_cs*/
+        Variable entera respuesta_cs*/
 
+        int respuesta_cs = JOptionPane.showConfirmDialog(this, "¿Desea Cerrar Sesión?", "Cerrar Sesión", JOptionPane.YES_NO_OPTION);
+
+        if (respuesta_cs == 0) {
+            this.dispose();
+        }
     }//GEN-LAST:event_JMenuItem_CerrarSesionActionPerformed
-
-
-    private void JMenuItem_ModulosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_ModulosActionPerformed
-    
-    }//GEN-LAST:event_JMenuItem_ModulosActionPerformed
-
-    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
-  
-    }//GEN-LAST:event_jMenuItem10ActionPerformed
-
-
-    private void JMenuItem_AplicacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_AplicacionesActionPerformed
-  
-    }//GEN-LAST:event_JMenuItem_AplicacionesActionPerformed
-
-    private void JMenuItem_PerfilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_PerfilesActionPerformed
-    
-
-    }//GEN-LAST:event_JMenuItem_PerfilesActionPerformed
-
-    private void JMenuItem_AplicacionesPerfilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_AplicacionesPerfilesActionPerformed
-  
-    }//GEN-LAST:event_JMenuItem_AplicacionesPerfilesActionPerformed
-
-    private void JMenuItem_AplicacionesModulosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_AplicacionesModulosActionPerformed
-        //  Asignacionmodulos Rita Sipaque
-     
-    }//GEN-LAST:event_JMenuItem_AplicacionesModulosActionPerformed
-
-    private void JMenuItem_UsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_UsuariosActionPerformed
-    
-    }//GEN-LAST:event_JMenuItem_UsuariosActionPerformed
-
-    private void JMenuItem_PerfilesUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_PerfilesUsuariosActionPerformed
-        // TODO add your handling code here:
-
-     
-    }//GEN-LAST:event_JMenuItem_PerfilesUsuariosActionPerformed
 
     private void JMenuItem_AplicacionesUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_AplicacionesUsuarioActionPerformed
       
     }//GEN-LAST:event_JMenuItem_AplicacionesUsuarioActionPerformed
 
-    private void JMenuItemCambioCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItemCambioCActionPerformed
-      
- 
-    }//GEN-LAST:event_JMenuItemCambioCActionPerformed
+    private void JMenuItem_AplicacionesPerfilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_AplicacionesPerfilesActionPerformed
+        // TODO add your handling code here:
+  
+    }//GEN-LAST:event_JMenuItem_AplicacionesPerfilesActionPerformed
+
+    private void JMenuItem_PerfilesUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_PerfilesUsuariosActionPerformed
+        // TODO add your handling code here:
+
+    
+    }//GEN-LAST:event_JMenuItem_PerfilesUsuariosActionPerformed
+
+    private void JMenuItem_AplicacionesModulosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_AplicacionesModulosActionPerformed
+        //  Asignacionmodulos Rita Sipaque
+
+    }//GEN-LAST:event_JMenuItem_AplicacionesModulosActionPerformed
 
     private void JMenuItem_BitacoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_BitacoraActionPerformed
-      
+   
     }//GEN-LAST:event_JMenuItem_BitacoraActionPerformed
+
+    private void JMenuItem_UsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_UsuariosActionPerformed
+  mantenimiento1 mantenimiento1 = new mantenimiento1();
+        mantenimiento1.setVisible(true);     
+            jDesktopPane1.add(mantenimiento1);
+      
+    }//GEN-LAST:event_JMenuItem_UsuariosActionPerformed
+
+    private void JMenuItem_AplicacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_AplicacionesActionPerformed
+       
+    }//GEN-LAST:event_JMenuItem_AplicacionesActionPerformed
+
+    private void JMenuItem_PerfilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_PerfilesActionPerformed
+      
+    }//GEN-LAST:event_JMenuItem_PerfilesActionPerformed
+
+    private void JMenuItem_ModulosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItem_ModulosActionPerformed
+    
+    }//GEN-LAST:event_JMenuItem_ModulosActionPerformed
+
+    private void JMenuItemCambioCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuItemCambioCActionPerformed
+   
+    }//GEN-LAST:event_JMenuItemCambioCActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
 
-     
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new seguridad().setVisible(true);
+            }
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane JDesktopPane_Escritorio;
     private javax.swing.JMenuItem JMenuItemCambioC;
     public static javax.swing.JMenuItem JMenuItem_Aplicaciones;
     public static javax.swing.JMenuItem JMenuItem_AplicacionesModulos;
@@ -285,6 +307,7 @@ public class MDI_Sistema extends javax.swing.JFrame {
     public static javax.swing.JMenu JMenu_Asignaciones;
     public static javax.swing.JMenu JMenu_Mantenimientos;
     public javax.swing.JMenu JMenu_Seguridad;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
